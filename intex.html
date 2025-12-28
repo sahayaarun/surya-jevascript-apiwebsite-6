@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-md">
+        <div class="container-fluid">
+            <p class="navbar-brand fw-bold">ONLINE SHOPPING MALL PRODUCTS📊</p>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">All products🏩</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="mb-4 text-center text-primary">All Products🏬</h2>
+
+        <div id="loadingSpinner" class="text-center my-5">
+            <div class="spinner-border text-primary d-none" role="status">
+                <span class="visually-hidden">Loading products...</span>
+            </div>
+        </div>
+
+        <div id="errorAlert" class="alert alert-danger text-center d-none" role="alert">
+            Network connection failed
+        </div>
+
+        <div id="productContainer" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        </div>
+    </div>
+
+
+    <footer class="bg-light text-center py-3 mt-5 border-top">
+        <div class="container">
+            <p class="mb-0 text-muted">&copy; All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
